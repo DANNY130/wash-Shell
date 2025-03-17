@@ -1,0 +1,49 @@
+/*
+Danny Pham
+Course CSC3350
+wash Shell Extra Credit Project
+Professor Andy Cameron
+Date: 06/11/2024
+*/
+#wash < list_of_test_commands.txt not working
+#Whitespace handling
+echo Hello, World!
+cd
+pwd
+setpath /bin /usr/bin
+#Built-in commands
+echo "Test echo command"
+pwd
+cd /tmp
+pwd
+cd
+pwd
+setpath /bin /usr/bin
+setpath /bin
+help
+#Redirection
+echo test > testfile
+cat testfile.output
+cat testfile.error
+ls > ls_output
+cat ls_output
+echo "This is an error test" > test_output
+#External commands (PATH : /bin)
+date
+ls -l
+df -h
+man ls
+#Here please set it to your current working directory before running this 
+customized external command
+pwd
+#my pwd is /mnt/d/shell/wash
+setpath /mnt/d/shell/wash
+#make sure to include head_new.c and file.txt files in your current 
+working directory.
+gcc head_new.c -o head_new
+./head_new file.txt
+./head_new -n 3 file.txt
+./head_new -h
+./head_new
+#exiting the shell
+exit
